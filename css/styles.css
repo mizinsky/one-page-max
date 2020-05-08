@@ -5,7 +5,9 @@
  */
 
 body {
+  background-color: #EBF5EE;
   font-family: 'Lato';
+  color: #080705;
 }
 
 h1,
@@ -27,7 +29,7 @@ h6 {
 }
 
 .bg-black {
-  background-color: #000 !important;
+  background-color: #080705 !important;
 }
 
 .rounded-pill {
@@ -59,7 +61,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #145C9E 0%, #283044 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -83,7 +85,7 @@ header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  background: linear-gradient(0deg, #283044 0%, #145C9E 100%);
 }
 
 header.masthead .bg-circle-1 {
@@ -128,33 +130,53 @@ header.masthead .bg-circle-4 {
 }
 
 .bg-primary {
-  background-color: #ee0979 !important;
+  background-color: #283044 !important;
 }
 
 .btn-primary {
-  background-color: #ee0979;
-  border-color: #ee0979;
+  background-color: #283044;
+  border-color: #283044;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #bd0760 !important;
-  border-color: #bd0760 !important;
+  background-color: #080705 !important;
+  border-color: #080705 !important;
 }
 
 .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(238, 9, 121, 0.5);
 }
 
-.btn-secondary {
-  background-color: #ff6a00;
-  border-color: #ff6a00;
+.image-cropper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
 }
 
-.btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover {
-  background-color: #cc5500 !important;
-  border-color: #cc5500 !important;
+.image-cropper img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
 }
 
-.btn-secondary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+.rounded-image {
+  height: 400px;
+  width: 400px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  background-size: contain;
+}
+
+.rounded-image.i-1 {
+  background: url("../img/01.jpg") center no-repeat;
+}
+.rounded-image.i-2 {
+  background:url("../img/02.jpg") center no-repeat;
+}
+.rounded-image.i-3 {
+  background:url("../img/03.jpg") center no-repeat;
 }
