@@ -35,16 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">O nas</a>
+            <a class="nav-link" href="#oNas">O nas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">O kursie</a>
+            <a class="nav-link" href="#oKursie">O kursie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Terminy</a>
+            <a class="nav-link" href="#terminy">Terminy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Opinie</a>
+            <a class="nav-link" href="#opinie">Opinie</a>
           </li>
         </ul>
       </div>
@@ -65,7 +65,7 @@
     <div class="bg-circle-4 bg-circle"></div>
   </header>
 
-  <section>
+  <section id="oNas">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
@@ -91,7 +91,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="oKursie">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
@@ -112,7 +112,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="terminy">
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6 order-lg-2">
@@ -131,7 +131,7 @@
     </div>
   </section>
 
-  <section>
+  <section id="opinie">
     <div class="container">
       <div class="row justify-content-center">
         <div class="p-3">
@@ -178,10 +178,10 @@
         </div>
         <div class="col-md-4 part">
           <ul class="sections">
-            <li><a href="#">O nas</a></li>
-            <li><a href="#">O kursie</a></li>
-            <li><a href="#">Terminy</a></li>
-            <li><a href="#">Opinie</a></li>
+            <li><a class="nav-link" href="#oNas">O nas</a></li>
+            <li><a class="nav-link" href="#oKursie">O kursie</a></li>
+            <li><a class="nav-link" href="#terminy">Terminy</a></li>
+            <li><a class="nav-link" href="#opinie">Opinie</a></li>
           </ul>
         </div>
         <div class="col-md-4 part">
@@ -197,6 +197,14 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    $('.nav-link').click(function() {
+      var sectionTo = $(this).attr('href');
+      $('html, body').animate({
+        scrollTop: $(sectionTo).offset().top - 67
+      }, 500);
+    });
+  </script>
 
 </body>
 
