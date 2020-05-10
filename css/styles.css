@@ -175,6 +175,11 @@ footer a:hover {
   text-decoration: none;
 }
 
+.icon {
+  height: 14px;
+  margin-right: 7px;
+}
+
 .recommendation-container {
   max-width: 552px;
   margin: 0 auto 2rem;
