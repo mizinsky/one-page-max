@@ -35,16 +35,16 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#oNas">O nas</a>
+            <a class="nav-link link" href="#oNas">O nas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#oKursie">O kursie</a>
+            <a class="nav-link link" href="#oKursie">O kursie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#terminy">Terminy</a>
+            <a class="nav-link link" href="#terminy">Terminy</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#opinie">Opinie</a>
+            <a class="nav-link link" href="#opinie">Opinie</a>
           </li>
         </ul>
       </div>
@@ -56,7 +56,7 @@
       <div class="container">
         <h1 class="masthead-heading mb-0">Szkoła nauki jazdy MAX</h1>
         <h2 class="masthead-subheading mb-0">z przyjemnością nauczysz się jeździć</h2>
-        <a href="#" class="btn btn-primary btn-xl rounded-pill mt-5">Przeczytaj więcej!</a>
+        <a href="#oNas" class="btn btn-primary btn-xl rounded-pill mt-5 link">Przeczytaj więcej!</a>
       </div>
     </div>
     <div class="bg-circle-1 bg-circle"></div>
@@ -167,21 +167,21 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 part">
-          <h3>Szkoła nauki jazdy MAX</h3>
-          <p><b>Z przyjemnością nauczysz się jeździć!</b></p>
+          <h3>Ośrodek Szkolenia Kierowców MAX</h3>
+          <p><b>Piotr Kubala</b></p>
           <ul>
             <li><img class="icon" src="img/phone.svg" alt=""> 505 069 921</li>
-            <li><img class="icon" src="img/envelope-closed.svg" alt=""> email.example.com</li>
+            <li><img class="icon" src="img/envelope-closed.svg" alt=""> piotr_kubala@autograf.pl</li>
             <li><img class="icon" src="img/map-marker.svg" alt=""> Brzesko, ul. Ogrodowa 5</li>
-            <li>Facebook</li>
+            <li><a class="nav-link footer-link" href="https://www.facebook.com/NaukaJazdyMax/" target="_blank">Facebook</a></li>
           </ul>
         </div>
         <div class="col-md-4 part">
           <ul class="sections">
-            <li class="nav-item"><a class="nav-link" href="#oNas">O nas</a></li>
-            <li class="nav-item"><a class="nav-link" href="#oKursie">O kursie</a></li>
-            <li class="nav-item"><a class="nav-link" href="#terminy">Terminy</a></li>
-            <li class="nav-item"><a class="nav-link" href="#opinie">Opinie</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#oNas">O nas</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#oKursie">O kursie</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#terminy">Terminy</a></li>
+            <li class="nav-item"><a class="nav-link link" href="#opinie">Opinie</a></li>
           </ul>
         </div>
         <div class="col-md-4 part">
@@ -198,10 +198,10 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script>
-    $('.nav-link').click(function() {
+    $('.link').click(function() {
       var sectionTo = $(this).attr('href');
       $('html, body').animate({
-        scrollTop: $(sectionTo).offset().top - 67
+        scrollTop: $(sectionTo).offset().top - 80
       }, 500);
     });
   </script>
