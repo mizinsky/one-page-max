@@ -186,9 +186,18 @@
         </div>
         <div class="col-md-4 part">
           <h4>Napisz do nas e-mail!</h4>
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="email">
+          <form>
+            <div class="form-group">
+              <label for="emailContent">Wiadomość</label>
+              <textarea class="form-control" id="emailContent" aria-describedby="emailHelp">Cześć...</textarea>
             </div>
+            <div class="form-group">
+              <label for="emailSender">Jak się z Tobą skontaktować?</label>
+              <input type="text" class="form-control" id="emailSender" aria-describedby="emailHelp" placeholder="numer telefonu lub email">
+              <small id="emailHelp" class="form-text text-muted">Zostaw numer telefonu, albo adres email, na który możemy odpowiedzieć :)</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+          </form>
         </div>
       </div>
     </div>
