@@ -198,7 +198,7 @@
             </div>
             <button id="submitBtn" type="submit" class="btn btn-primary btn-xl rounded-pill">Wyślij</button>
           </form>
-          <div id="feedback"></div>
+          <div id="feedback" class="form-text text-muted"></div>
         </div>
       </div>
     </div>
@@ -221,26 +221,27 @@
   </script>
   <script>
     $(document).ready(function(){
-    
-        $("#submitBtn").click(function(event) {
-        alert('pressed');
-            //values
-            var content=document.getElementById('contentInput').value;
-            var contact=document.getElementById('contactInput').value;
+      $("#submitBtn").click(function(event) {
+        var content=document.getElementById('contentInput').value;
+        var contact=document.getElementById('contactInput').value;
+        
+        if(content && contact) {
+          var dataString = {"content": content, "contact": contact};
 
-            var dataString = {"content": content, "contact": contact};
-    
-            $.ajax({
-                type:"post",
-                url:"mailer.php",
-                data: dataString,
-                success: function(html) {
-                    $('#feedback').html(html);
-                    alert(html);
-                }
-            });
-          event.preventDefault();
-        });
+          $.ajax({
+            type:"post",
+            url:"mailer.php",
+            data: dataString,
+            success: function(html) {
+              $('#feedback').html(html);
+            }
+          });
+        } else {
+          alert("Nie napisałeś wiadomości lub kontaktu :(");
+        }
+        
+        event.preventDefault();
+      });
     });
     </script>
 </body>
