@@ -8,6 +8,7 @@ body {
   background-color: #EBF5EE;
   font-family: 'Lato';
   color: #080705;
+  letter-spacing: 0.3px;
 }
 
 h1,
@@ -22,6 +23,7 @@ h6 {
 
 h2 {
   text-shadow: -2px 2px 2px #A0A0A0;
+  letter-spacing: 1px;
 }
 
 .btn-xl {
@@ -321,4 +323,8 @@ header.masthead .bg-circle-4 {
 img.logo {
   opacity: 0.5;
   height: 30px;
+}
+
+strong {
+  letter-spacing: 1px;;
 }
