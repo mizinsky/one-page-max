@@ -186,18 +186,19 @@
         </div>
         <div class="col-md-4 part">
           <h4>Napisz do nas e-mail!</h4>
-          <form method="post" action="handler.php">
+          <form method="post" id="contactForm">
             <div class="form-group">
               <label for="emailContent">Wiadomość</label>
-              <textarea class="form-control" name="content" id="emailContent" aria-describedby="emailHelp">Cześć...</textarea>
+              <textarea class="form-control" id="contentInput">Cześć...</textarea>
             </div>
             <div class="form-group">
               <label for="emailSender">Jak się z Tobą skontaktować?</label>
-              <input type="text" class="form-control" name="contact" id="emailSender" aria-describedby="emailHelp" placeholder="numer telefonu lub email">
+              <input type="text" class="form-control" id="contactInput" id="emailSender" aria-describedby="emailHelp" placeholder="numer telefonu lub email">
               <small id="emailHelp" class="form-text text-muted">Zostaw numer telefonu, albo adres email, na który możemy odpowiedzieć :)</small>
             </div>
-            <button type="submit" class="btn btn-primary btn-xl rounded-pill">Wyślij</button>
+            <button id="submitBtn" type="submit" class="btn btn-primary btn-xl rounded-pill">Wyślij</button>
           </form>
+          <div id="feedback"></div>
         </div>
       </div>
     </div>
@@ -218,7 +219,30 @@
       }, 500);
     });
   </script>
+  <script>
+    $(document).ready(function(){
+    
+        $("#submitBtn").click(function(event) {
+        alert('pressed');
+            //values
+            var content=document.getElementById('contentInput').value;
+            var contact=document.getElementById('contactInput').value;
 
+            var dataString = {"name": name, "email":email, "phone": phone, "message":message}
+    
+            $.ajax({
+                type:"post",
+                url:"mailer.php",
+                data: dataString,
+                success: function(html) {
+                    $('#feedback').html(html);
+                    alert(html);
+                }
+            });
+          event.preventDefault();
+        });
+    });
+    </script>
 </body>
 
 </html>
