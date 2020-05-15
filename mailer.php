@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST['content'], $_POST['contact'])) {
-    $to = "jakubmizinski@gmail.com";
+    $to = "piotr_kubala@autograf.pl";
     $from = "biuro@oskmax.pl";
     $content = $_POST['content'];
     $contact = $_POST['contact'];
