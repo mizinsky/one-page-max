@@ -21,7 +21,7 @@ h6 {
   font-weight: 800 !important;
 }
 
-h2.shadow {
+h2.text-shadow {
   text-shadow: -2px 2px 2px #A0A0A0;
   letter-spacing: 1px;
 }
