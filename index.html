@@ -228,7 +228,7 @@
             var content=document.getElementById('contentInput').value;
             var contact=document.getElementById('contactInput').value;
 
-            var dataString = {"name": name, "email":email, "phone": phone, "message":message}
+            var dataString = {"content": content, "contact": contact};
     
             $.ajax({
                 type:"post",
