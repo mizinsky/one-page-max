@@ -21,9 +21,13 @@ h6 {
   font-weight: 800 !important;
 }
 
-h2 {
+h2.shadow {
   text-shadow: -2px 2px 2px #A0A0A0;
   letter-spacing: 1px;
+}
+
+p, li {
+  text-align: justify;
 }
 
 .btn-xl {
