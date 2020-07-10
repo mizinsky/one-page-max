@@ -224,52 +224,18 @@ footer .footer-link {
   margin-right: 7px;
 }
 
-.recommendation-container {
-  max-width: 552px;
-  margin: 0 auto 2rem;
+.review img {
+  max-width: 100%;
+  margin-bottom: 30px;
+  -webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 }
-.recommendation {
-  border-radius:  2rem;
-  box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -2px 2px 5px 0px rgba(0,0,0,0.75);
-}
-
-.recommendation.r-1 {
-  min-height: 157px;
-}
-.recommendation.r-2 {
-  min-height: 157px;
-}
-.recommendation.r-3 {
-  min-height: 350px;
-}
-.recommendation.r-4 {
-  min-height: 176px;;
-}
-.recommendation.r-5 {
-  min-height: 369px;
-}
-.recommendation.r-6 {
-  min-height: 157px;;
-}
-.recommendation.r-7 {
-  min-height: 427px;
+.review img:hover {
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 @media (max-width: 541px) {
-  .recommendation.r-7 {
-    min-height: 445px;
-  }
-  .recommendation.r-5 {
-    min-height: 387px;
-  }
-  .recommendation.r-4 {
-    min-height: 194px;
-  }
-  .recommendation.r-3 {
-    min-height: 368px;
-  }
 }
 
 footer {
