@@ -1,1 +1,1 @@
-ssh oskmax@ssh.dhosting.pl
+# Old clone
